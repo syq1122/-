@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		5153CEB31C95A7420091786F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5153CEB21C95A7420091786F /* main.m */; };
 		5153CEB61C95A7420091786F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5153CEB51C95A7420091786F /* AppDelegate.m */; };
-		5153CEB91C95A7420091786F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5153CEB81C95A7420091786F /* ViewController.m */; };
+		5153CEB91C95A7420091786F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5153CEB81C95A7420091786F /* ViewController.mm */; };
 		5153CEBC1C95A7420091786F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5153CEBA1C95A7420091786F /* Main.storyboard */; };
 		5153CEBE1C95A7420091786F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5153CEBD1C95A7420091786F /* Assets.xcassets */; };
 		5153CEC11C95A7420091786F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5153CEBF1C95A7420091786F /* LaunchScreen.storyboard */; };
+		5153CECD1C95A7A60091786F /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5153CECC1C95A7A60091786F /* libPaymentControl.a */; };
+		5153CECF1C95A7CA0091786F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5153CECE1C95A7CA0091786F /* CFNetwork.framework */; };
+		5153CED11C95A7D40091786F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5153CED01C95A7D40091786F /* SystemConfiguration.framework */; };
+		5153CED31C95A7E00091786F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5153CED21C95A7E00091786F /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +25,16 @@
 		5153CEB41C95A7420091786F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5153CEB51C95A7420091786F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5153CEB71C95A7420091786F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5153CEB81C95A7420091786F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5153CEB81C95A7420091786F /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		5153CEBB1C95A7420091786F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5153CEBD1C95A7420091786F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5153CEC01C95A7420091786F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5153CEC21C95A7420091786F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5153CECA1C95A7A60091786F /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		5153CECC1C95A7A60091786F /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+		5153CECE1C95A7CA0091786F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5153CED01C95A7D40091786F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5153CED21C95A7E00091786F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5153CED31C95A7E00091786F /* libz.tbd in Frameworks */,
+				5153CED11C95A7D40091786F /* SystemConfiguration.framework in Frameworks */,
+				5153CECF1C95A7CA0091786F /* CFNetwork.framework in Frameworks */,
+				5153CECD1C95A7A60091786F /* libPaymentControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,9 @@
 		5153CEA51C95A7420091786F = {
 			isa = PBXGroup;
 			children = (
+				5153CED21C95A7E00091786F /* libz.tbd */,
+				5153CED01C95A7D40091786F /* SystemConfiguration.framework */,
+				5153CECE1C95A7CA0091786F /* CFNetwork.framework */,
 				5153CEB01C95A7420091786F /* 银联支付1 */,
 				5153CEAF1C95A7420091786F /* Products */,
 			);
@@ -58,10 +74,11 @@
 		5153CEB01C95A7420091786F /* 银联支付1 */ = {
 			isa = PBXGroup;
 			children = (
+				5153CEC81C95A7620091786F /* YinLian */,
 				5153CEB41C95A7420091786F /* AppDelegate.h */,
 				5153CEB51C95A7420091786F /* AppDelegate.m */,
 				5153CEB71C95A7420091786F /* ViewController.h */,
-				5153CEB81C95A7420091786F /* ViewController.m */,
+				5153CEB81C95A7420091786F /* ViewController.mm */,
 				5153CEBA1C95A7420091786F /* Main.storyboard */,
 				5153CEBD1C95A7420091786F /* Assets.xcassets */,
 				5153CEBF1C95A7420091786F /* LaunchScreen.storyboard */,
@@ -77,6 +94,31 @@
 				5153CEB21C95A7420091786F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5153CEC81C95A7620091786F /* YinLian */ = {
+			isa = PBXGroup;
+			children = (
+				5153CEC91C95A7A60091786F /* inc */,
+				5153CECB1C95A7A60091786F /* libs */,
+			);
+			path = YinLian;
+			sourceTree = "<group>";
+		};
+		5153CEC91C95A7A60091786F /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				5153CECA1C95A7A60091786F /* UPPaymentControl.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		5153CECB1C95A7A60091786F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5153CECC1C95A7A60091786F /* libPaymentControl.a */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5153CEB91C95A7420091786F /* ViewController.m in Sources */,
+				5153CEB91C95A7420091786F /* ViewController.mm in Sources */,
 				5153CEB61C95A7420091786F /* AppDelegate.m in Sources */,
 				5153CEB31C95A7420091786F /* main.m in Sources */,
 			);
@@ -265,6 +307,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "银联支付1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/银联支付1/YinLian/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "lanou.----1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -276,6 +323,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "银联支付1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/银联支付1/YinLian/libs",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "lanou.----1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -300,6 +352,7 @@
 				5153CEC71C95A7420091786F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
